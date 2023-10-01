@@ -66,18 +66,23 @@ ul li a:hover {
 nav{
    grid-area: nav;
    border: 5px solid black;
+   width: auto;
 }
 main{ grid-area: main;
+    width: auto;
     
 }
 header{
     grid-area: header;
+    width: auto;
 }
 aside{
     grid-area: aside;
+    width: auto;
 }
 section{
     grid-area: section;
+    width: auto;
 }
 .movie-images ul li a:hover{
     position: relative;
@@ -128,16 +133,17 @@ footer{
 .infopage{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto auto auto auto;
+grid-template-rows: auto auto auto auto auto;
 grid-template-areas: 
 "nav nav nav"
-"header header section"
-"main main aside"
+"header header header"
+"aside main main"
+"aside main main"
 "footer footer footer"
 ;
-
-    
 }
+
+
 section a{
     color: white;
 }
