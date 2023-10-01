@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/mystyle.css">
+    <script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container Homepage">
+        <nav class="content navigatie" >
+            <div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+            </div>	
+            <div class="searchbox">
+                <input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.."/>
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div datumbar>
+                <label for="my-date-picker">Welke datum wilt u komen?
+                    <input type="date" id="my-date-picker" name="my-date-picker" >
+                </label>
+            </div>
+            </ul>
+        </nav>
+         <form
+        action="zoekscript.php"
+        method="get"
+        action="upload_movie.php"
+        method="post"
+        enctype="multipart/form-data">
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="titel" required /><br /><br />
+        <label for="beschrijving">Beschrijving:</label>
+        <textarea id="beschrijving" name="beschrijving" required></textarea><br /><br />
+        <label for="afbeelding">Afbeelding:</label>
+        <input type="file" id="afbeelding" name="afbeelding" accept="image/*" required /><br /><br />
+        <input type="submit" value="Film toevoegen" />
+    </form>
+
+    
+</body>
+</html>
