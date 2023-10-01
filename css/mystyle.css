@@ -99,7 +99,7 @@ footer{
 }
 .container{
     display: grid;
-    background-image: url("/img/bioscoop.png");
+    background-image: url("../img/bioscoop.png");
     background-color: #000;
     background-size: cover;
     
