@@ -8,38 +8,43 @@
     <script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container Homepage">
+    <div class="container Film_adder">
         <nav class="content navigatie" >
             <div>
             <ul>
-                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
             </div>	
             <div class="searchbox">
                 <input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.."/>
                 <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div datumbar>
-                <label for="my-date-picker">Welke datum wilt u komen?
+            <div class="datumbar">
+                <label for="my-date-picker">
                     <input type="date" id="my-date-picker" name="my-date-picker" >
                 </label>
             </div>
             </ul>
         </nav>
-         <form
-        action="zoekscript.php"
-        method="get"
-        action="upload_movie.php"
-        method="post"
-        enctype="multipart/form-data">
-        <label for="titel">Titel:</label>
-        <input type="text" id="titel" name="titel" required /><br /><br />
-        <label for="beschrijving">Beschrijving:</label>
-        <textarea id="beschrijving" name="beschrijving" required></textarea><br /><br />
-        <label for="afbeelding">Afbeelding:</label>
-        <input type="file" id="afbeelding" name="afbeelding" accept="image/*" required /><br /><br />
-        <input type="submit" value="Film toevoegen" />
-    </form>
-
+       <header> <p><h1>Add a Film</h1></p></header>
+        <main>
+            
+            <form action="process-film.php" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+        
+                <label for="director">Director:</label>
+                <input type="text" id="director" name="director" required><br><br>
+        
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required><br><br>
+        
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" required><br><br>
+        
+                <input type="submit" value="Add Film">
+            </form>
+        </main>
+    </div>
     
 </body>
 </html>

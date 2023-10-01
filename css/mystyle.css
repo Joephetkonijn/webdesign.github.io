@@ -1,170 +1,226 @@
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    
+h1 {
+	font-family: "Courier New", Courier, monospace;
 }
-*{
-    color: white;
+p {
+	color: white;
 }
-
 ul {
-    list-style-type: none;
-    padding: 10px;
+	list-style-type: none;
+	padding: 10px;
 }
 
 ul li {
-    display: inline;
-    margin: 20px;
+	display: inline;
+	margin: 20px;
 }
-footer p{
-    display: inline;
-   color: white;
-   font-size: medium;
-   
+footer p {
+	display: inline;
 }
-footer p:hover{
-    color: #FF5733;
-    font-size: medium;
+footer p:hover {
+	color: #ff5733;
 }
 
 ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    font-size: medium;
-    
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
 }
 
 ul li a:hover {
-    color: #FF5733;
-    font-size: larger;
-    position: relative;
-    top: -4px;
-     
+	color: #ff5733;
+	position: relative;
+	top: -4px;
 }
-.movie-images ul{
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 100px;
-    text-align: center;
-    background-color: #00bfff ;
-
-;
-}
-.movie-images p{
-    color: white;
+.movie-images ul {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 100px;
+	text-align: center;
+	background-color: #00bfff;
 }
 
-.movie-images img{
-    box-shadow: 5px 5px 10px #fff;
-    
+.movie-images img {
+	box-shadow: 5px 5px 10px #fff;
 }
-.movie-images li{
-    background-color: #000; 
-}
-
-nav{
-   grid-area: nav;
-   border: 5px solid black;
-   width: auto;
-}
-main{ grid-area: main;
-    width: auto;
-    
-}
-header{
-    grid-area: header;
-    width: auto;
-}
-aside{
-    grid-area: aside;
-    width: auto;
-}
-section{
-    grid-area: section;
-    width: auto;
-}
-.movie-images ul li a:hover{
-    position: relative;
-    top: -4px;
-    color: #FF5733;
-}
-footer{
-    width: auto;
-    background-color: black;
-    text-align: center;
-    border: 2px solid white;
-    grid-area: footer;
-   
-}
-.container{
-    display: grid;
-    background-image: url("../img/bioscoop.png");
-    background-color: #000;
-    background-size: cover;
-    
-}
-.content{
-    margin: 5px;
-    padding: 5px;
-}
-.Homepage{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "main main main"
-    "footer footer footer"
-    ;
-    grid-gap: 5px;
-    
-}
-.aboutpage{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "nav nav nav"
-    "header header header"
-    "main main aside"
-    "footer footer footer";
-    max-height: 200px;
-    
-}
-.infopage{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto auto auto auto auto;
-grid-template-areas: 
-"nav nav nav"
-"header header header"
-"aside main main"
-"aside main main"
-"footer footer footer"
-;
+.movie-images li {
+	background-color: #000;
 }
 
+nav {
+	grid-area: nav;
+	width: auto;
+}
+main {
+	grid-area: main;
+	width: auto;
+}
+header {
+	grid-area: header;
+	width: auto;
+}
+aside {
+	grid-area: aside;
+	width: auto;
+}
+section {
+	grid-area: section;
+	width: auto;
+}
+.movie-images ul li a:hover {
+	position: relative;
+	top: -4px;
+	color: #ff5733;
+}
+footer {
+	width: auto;
+	background-color: black;
+	text-align: center;
+	border: 2px solid white;
+	grid-area: footer;
+}
+.container {
+	display: grid;
+	background-image: url("../img/bioscoop.png");
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	width: auto;
+	height: auto;
+	overflow: auto;
+	max-width: 100%;
+	font-size: 22px;
+}
+.aboutpage {
+	background-color: #000;
+	background-size: cover;
+}
+.content {
+	margin: 5px;
+	padding: 5px;
+}
+.Homepage {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"main main main"
+		"footer footer footer";
+	grid-gap: 5px;
+}
+.aboutpage {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"main main aside"
+		"footer footer footer";
+}
+.infopage {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"aside main main"
+		"aside main main"
+		"footer footer footer";
+}
+.Actorpage {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"main main aside"
+		"footer footer footer";
+}
+.Film_adder {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"main main main"
+		"footer footer footer";
+	color: white;
+}
+.datumbar * {
+	color: #000;
+}
+.datumbar p {
+	color: #fff;
+}
 
-section a{
-    color: white;
+section a {
+	color: white;
 }
-section a:hover{
-    color: #FF5733;
+section a:hover {
+	color: #ff5733;
 }
-.navigatie{
-    display: inline;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "div div div";
-    align-items: center;
+.navigatie {
+	display: inline;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "div div div";
+	align-items: center;
 }
-.Joep{
-    width: 30rem;
+.Joep {
+	width: 30rem;
 }
-.Joep img{
-    width: 100%;
-
+.Joep img {
+	width: 100%;
 }
-
+@media (max-width: 768px) {
+	.container {
+		font-size: 15px;
+	}
+	.aboutpage {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"nav nav"
+			"header header"
+			"main aside"
+			"footer footer";
+	}
+	.Film_adder {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"nav nav"
+			"header header"
+			"main main"
+			"footer footer";
+	}
+	.Actorpage {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"nav nav"
+			"header header"
+			"main aside"
+			"footer footer";
+	}
+	.Homepage {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"nav nav"
+			"header header "
+			"main main"
+			"footer footer";
+		grid-gap: 0px;
+	}
+	.movie-images ul {
+		display: grid;
+		grid-template-rows: auto auto auto auto auto auto;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 25px;
+		text-align: center;
+		background-color: #00bfff;
+	}
+}
