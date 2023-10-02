@@ -179,6 +179,7 @@ section a:hover {
 @media only screen and (max-width: 768px) {
 	.container {
 		font-size: 15px;
+		max-width: 768px;
 	}
 
 	.aboutpage {
