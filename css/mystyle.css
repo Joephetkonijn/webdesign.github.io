@@ -127,7 +127,7 @@ footer {
 		"nav nav nav"
 		"header header header"
 		"aside main main"
-		"aside main section"
+		"section main main"
 		"footer footer footer";
 }
 .Actorpage {
@@ -216,7 +216,6 @@ section a:hover {
 			"header header "
 			"main main"
 			"footer footer";
-		grid-gap: 0px;
 	}
 	.infopage {
 		grid-template-columns: 1fr 1fr;
@@ -240,8 +239,5 @@ section a:hover {
 		text-align: center;
 		background-size: auto;
 		width: auto;
-	}
-	.movie-images ul li {
-		background-size: 500px;
 	}
 }
