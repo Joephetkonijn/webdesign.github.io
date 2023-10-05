@@ -1,5 +1,6 @@
 h1 {
 	font-family: "Courier New", Courier, monospace;
+	color: white;
 }
 p {
 	color: white;
@@ -13,6 +14,9 @@ ul li {
 	display: inline;
 	margin: 20px;
 }
+main {
+	width: 100%;
+}
 footer p {
 	display: inline;
 }
@@ -22,8 +26,8 @@ footer p:hover {
 
 ul li a {
 	text-decoration: none;
-	color: white;
 	font-weight: bolder;
+	color: white;
 }
 
 ul li a:hover {
@@ -38,6 +42,7 @@ ul li a:hover {
 	grid-gap: 100px;
 	text-align: center;
 	background-color: #00bfff;
+	align-self: center;
 }
 
 .movie-images img {
@@ -46,34 +51,49 @@ ul li a:hover {
 .movie-images li {
 	background-color: #000;
 }
+.rating {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: row;
+}
+.rating input {
+	display: none;
+	flex-direction: row-reverse;
+}
+.rating label {
+	font: 30px;
+	color: slategray;
+	float: right;
+	transition: all 0.5s ease;
+}
 
+.rating input:not(:checked) ~ label:hover,
+.rating input:not(:checked) ~ label:hover ~ label {
+	color: #fd4;
+	cursor: pointer;
+}
+.rating input:checked ~ label {
+	color: #fd4;
+}
 nav {
 	grid-area: nav;
-	width: auto;
+	background-color: black;
 }
 main {
 	grid-area: main;
-	width: auto;
 }
 header {
 	grid-area: header;
-	width: auto;
 }
 aside {
 	grid-area: aside;
-	width: auto;
 }
 section {
 	grid-area: section;
-	width: auto;
 }
-.movie-images ul li a:hover {
-	position: relative;
-	top: -4px;
-	color: #ff5733;
-}
+
 footer {
-	width: auto;
 	background-color: black;
 	text-align: center;
 	border: 2px solid white;
@@ -93,13 +113,24 @@ footer {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
 		"Open Sans", "Helvetica Neue", sans-serif;
 }
-.aboutpage {
-	background-color: #000;
-	background-size: cover;
+.slideshow {
+	padding: 0px;
+	position: relative;
+	width: 185px;
+	height: 275px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.content {
-	margin: 5px;
-	padding: 5px;
+
+.slideshow > div {
+	position: absolute;
+}
+.slideshow div p {
+	position: absolute;
+	bottom: 5px;
+	left: 70px;
 }
 .Homepage {
 	grid-template-columns: 1fr 1fr 1fr;
@@ -156,12 +187,6 @@ footer {
 	color: #fff;
 }
 
-section a {
-	color: white;
-}
-section a:hover {
-	color: #ff5733;
-}
 .navigatie {
 	display: inline;
 	display: grid;
@@ -169,6 +194,7 @@ section a:hover {
 	grid-template-rows: auto;
 	grid-template-areas: "div div div";
 	align-items: center;
+	position: sticky;
 }
 .Joep {
 	width: 30rem;
@@ -210,7 +236,7 @@ section a:hover {
 			"footer footer";
 	}
 	.Homepage {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav"
@@ -228,7 +254,7 @@ section a:hover {
 			"main main"
 			"footer footer";
 	}
-	.infopage img {
+	img {
 		width: auto;
 		height: auto;
 	}
@@ -238,6 +264,10 @@ section a:hover {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 10px;
 		text-align: center;
-		background-size: auto;
+		background-size: 1000px;
+	}
+	.movie-images ul li img {
+		width: 125px;
+		height: 175px;
 	}
 }

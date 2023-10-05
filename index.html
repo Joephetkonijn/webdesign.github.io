@@ -7,78 +7,139 @@
 		<title>Homepage</title>
 		<link rel="stylesheet" href="./css/mystyle.css" />
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#slideshow > div:gt(0)").hide();
+
+				setInterval(function () {
+					$("#slideshow > div:first").fadeOut(1000).next().fadeIn(1000).end().appendTo("#slideshow");
+				}, 5000);
+			});
+		</script>
 	</head>
 	<body>
 		<div class="container Homepage">
-			<nav class="content navigatie" >
+			<nav class="navigatie">
 				<div>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-				</div>	
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
 				<div class="searchbox">
-					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.."/>
+					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
 					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
 				<div class="datumbar">
 					<label for="my-date-picker">
-						<input type="date" id="my-date-picker" name="my-date-picker" >
+						<input type="date" id="my-date-picker" name="my-date-picker" />
 					</label>
 				</div>
-				</ul>
 			</nav>
-
 			<header class="content">
+				<div id="slideshow" class="slideshow">
+					<div class="picture">
+						<img src="/img/Cars.png" />
+						<p>Cars</p>
+					</div>
+					<div class="picture">
+						<img src="/img/Minions.png" />
+						<p>Minions</p>
+					</div>
+					<div class="picture">
+						<img src="/img/mario.jpg" />
+						<p>Mario</p>
+					</div>
+					<div class="picture">
+						<img src="/img/Elemental.jpg" />
+						<p>Elemental</p>
+					</div>
+				</div>
 				<h1><p>Homepage</p></h1>
+			</header>
 
 			<main class="content">
 				<section class="image movie-images">
 					<ul>
 						<li>
-							<a href="Cars.html"> <img src="img/Cars.png" alt="Cars" /><br /> <p>Cars</p></a>
+							<a href="Cars.html"> <img src="img/Cars.png" alt="Cars" /><br />Cars </a>
 						</li>
 						<li>
-							<a href="Minions.html"> <img src="img/Minions.png" alt="Minions" /><br /><p>Minions</p></a>
+							<a href="Minions.html"> <img src="img/Minions.png" alt="Minions" /><br />Minions</a>
 						</li>
 						<li>
-							<img src="img/Avatar.jpg" alt="Avatar" /><br><p>Avatar</p>
+							<a href="Avatar.html"
+								><img src="img/Avatar.jpg" alt="Avatar" /><br />
+								Avatar</a
+							>
 						</li>
 						<li>
-							<img src="img/Titanic.jpg" alt="Titanic" /><br><p>Titanic</p>
+							<a href="Titanic.html"
+								><img src="img/Titanic.jpg" alt="Titanic" /><br />
+								Titanic</a
+							>
 						</li>
 						<li>
-							<img src="img/derUntergang.jpg" alt="der Untergang" /><br><p>der Untergang</p>
+							<a href="derUntergang.html"
+								><img src="img/derUntergang.jpg" alt="der Untergang" /><br />
+								der Untergang</a
+							>
 						</li>
 						<li>
-							<img src="img/mario.jpg" alt="mario" /><br><p>mario</p>						</li>
-						<li>
-							<img src="img/mayadebij.jpg" alt="maya de bij" /><br><p>maya de bij</p>
+							<a href="Mario.html"
+								><img src="img/mario.jpg" alt="mario" /><br />
+								mario</a
+							>
 						</li>
 						<li>
-							<img src="img/Bobdebouwer.jpg" alt="bob de bouwer" /><br><p>bob de bouwer</p>
+							<a href="Mayadebij.hmtl"
+								><img src="img/mayadebij.jpg" alt="maya de bij" /><br />
+								maya de bij</a
+							>
 						</li>
 						<li>
-							<img src="img/Barbie.jpg" alt="Barbie" /><br><p>Barbie</p>
+							<a href="Bobdebouwer.html"
+								><img src="img/Bobdebouwer.jpg" alt="bob de bouwer" /><br />
+								bob de bouwer</a
+							>
 						</li>
 						<li>
-							<img src="img/Elemental.jpg" alt="Elemental"/><br><p>Elemental</p>
+							<a href="Barbie.html"
+								><img src="img/Barbie.jpg" alt="Barbie" /><br />
+								Barbie</a
+							>
 						</li>
 						<li>
-							<img src="img/smurfen.jpg" alt="smurfen" /><br><p>smurfen</p>
+							<a href="Elemental.html"
+								><img src="img/Elemental.jpg" alt="Elemental" /><br />
+								Elemental</a
+							>
 						</li>
 						<li>
-							<img src="img/frozen2.jpg" alt="frozen2" /><br><p>frozenII</p>
+							<a href="smurfen.html"
+								><img src="img/smurfen.jpg" alt="smurfen" /><br />
+								smurfen</a
+							>
+						</li>
+						<li>
+							<a href="frozen2.html"
+								><img src="img/frozen2.jpg" alt="frozen2" /><br />
+								frozenII</a
+							>
 						</li>
 					</ul>
 				</section>
 			</main>
 
 			<footer class="content">
-				
-					<ul>
-						<li><a href="about.html"><p>Over Ons</p></a></li>
-						<li><a href="Film_adder.html"><p>Film toevoegen</p></a></li>
-					</ul>
-				
+				<ul>
+					<li>
+						<a href="about.html"><p>Over Ons</p></a>
+					</li>
+					<li>
+						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+					</li>
+				</ul>
 			</footer>
 		</div>
 		<script src="get_date.js"></script>

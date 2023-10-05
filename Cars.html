@@ -3,32 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Cars</title>
 		<link rel="stylesheet" href="./css/mystyle.css" />
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-	<div class="container infopage">
-		<nav class="content navigatie" >
-			<div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-			</div>	
-			<div class="searchbox">
-				<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.."/>
-				<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-			</div>
-			<div class="datumbar">
-				<label for="my-date-picker">
-					<input type="date" id="my-date-picker" name="my-date-picker" >
-				</label>
-			</div>
-			</ul>
-		</nav>
-		<header><h1> <p>Cars</p></h1></header>
+		<div class="container infopage">
+			<nav class="navigatie">
+				<div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+				<div class="searchbox">
+					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="datumbar">
+					<label for="my-date-picker">
+						<input type="date" id="my-date-picker" name="my-date-picker" />
+					</label>
+				</div>
+			</nav>
+			<header>
+				<h1><p>Cars</p></h1>
+			</header>
 			<main>
-				<article  >
-					<h2><strong><p>Beschrijving</p></strong></h2>
+				<article>
+					<h2>
+						<strong><p>Beschrijving</p></strong>
+					</h2>
 					<p>
 						De film speelt zich af in een wereld die geheel bevolkt wordt door levende auto’s en andere
 						voertuigen. Centraal staat de rode racewagen Bliksem McQueen, die alleen lijkt te leven voor het
@@ -74,24 +78,35 @@
 					</p>
 				</article>
 			</main>
-			<aside><img class="image" src="img/Cars.png" alt="Cars" /><br><p>Film duur: 116 minuten </p></aside>
+			<aside>
+				<img class="image" src="img/Cars.png" alt="Cars" /><br />
+				<p>Film duur: 116 minuten</p>
+			</aside>
 			<section>
-				<h2><p>Voice acteurs</p></h2>
+				<h2>
+					<p>Voice acteurs</p>
+				</h2>
 				<ul>
-					<p class="link"><a href="Owen_Wilson.html">Owen Wilson</a> als Lighting McQueen</p>
-					<p class="link"><a href="Larry_the_cable_guy.html">Larry the Cable Guy</a> als Takel</p>
+					<li>
+						<a href="Owen_Wilson.html">Owen Wilson als Lighting McQueen</a>
+					</li>
+
+					<li>
+						<a href="Larry_the_cable_guy.html">Larry the Cable Guy als Takel</a>
+					</li>
 				</ul>
 			</section>
-		</div>
 			<footer class="content">
-				
 				<ul>
-					<li><a href="about.html"><p>Over Ons</p></a></li>
-					<li><a href="Film_adder.html"><p>Film toevoegen</p></a></li>
+					<li>
+						<a href="about.html"><p>Over Ons</p></a>
+					</li>
+					<li>
+						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+					</li>
 				</ul>
-			
-		</footer>
-	
-	</div>
+			</footer>
+		</div>
+		<script src="get_date.js"></script>
 	</body>
 </html>

@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/mystyle.css">
-    <script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container Film_adder">
-        <nav class="content navigatie" >
-            <div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </div>	
-            <div class="searchbox">
-                <input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.."/>
-                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="datumbar">
-                <label for="my-date-picker">
-                    <input type="date" id="my-date-picker" name="my-date-picker" >
-                </label>
-            </div>
-            </ul>
-        </nav>
-       <header> <p><h1>Add a Film</h1></p></header>
-        <main>
-            
-            <form action="process-film.php" method="post">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required><br><br>
-        
-                <label for="director">Director:</label>
-                <input type="text" id="director" name="director" required><br><br>
-        
-                <label for="year">Year:</label>
-                <input type="number" id="year" name="year" required><br><br>
-        
-                <label for="genre">Genre:</label>
-                <input type="text" id="genre" name="genre" required><br><br>
-        
-                <input type="submit" value="Add Film">
-            </form>
-        </main>
-        <footer class="content">
-				
-            <ul>
-                <li><a href="about.html"><p>Over Ons</p></a></li>
-                <li><a href="Film_adder.html"><p>Film toevoegen</p></a></li>
-            </ul>
-        
-        </footer>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Film-adder</title>
+		<link rel="stylesheet" href="css/mystyle.css" />
+		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container Film_adder">
+			<nav class="navigatie">
+				<div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+				<div class="searchbox">
+					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="datumbar">
+					<label for="my-date-picker">
+						<input type="date" id="my-date-picker" name="my-date-picker" />
+					</label>
+				</div>
+			</nav>
+			<header>
+				<h1><p>Add a Film</p></h1>
+			</header>
+			<main>
+				<form action="process-film.php" method="post">
+					<label for="title">Titel:</label>
+					<input type="text" id="title" name="title" required /><br /><br />
 
-</body>
+					<label for="director">Regisseur:</label>
+					<input type="text" id="director" name="director" required /><br /><br />
+
+					<label for="year">Jaartal:</label>
+					<input type="number" id="year" name="year" required /><br /><br />
+
+					<label for="genre">Genre:</label>
+					<input type="text" id="genre" name="genre" required /><br /><br />
+
+					<input type="submit" value="Add Film" />
+				</form>
+			</main>
+			<footer class="content">
+				<ul>
+					<li>
+						<a href="about.html"><p>Over Ons</p></a>
+					</li>
+					<li>
+						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script src="get_date.js"></script>
+	</body>
 </html>
