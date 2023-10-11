@@ -6,24 +6,27 @@
 		<title>Larry the Cable Guy</title>
 		<link rel="stylesheet" href="./css/mystyle.css" />
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</head>
 
 	<body>
 		<div class="container Actorpage">
-			<nav class="content navigatie">
+			<nav class="navigatie">
 				<div>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
-				<div class="searchbox">
-					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+				<div>
+					<input type="text" id="searchbar" placeholder="Zoeken.." />
 					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
-				<div class="datumbar">
-					<label for="my-date-picker">
-						<input type="date" id="my-date-picker" name="my-date-picker" />
-					</label>
+				<div>
+					<button onclick="goBack()">Ga terug naar vorige pagina</button>
 				</div>
 			</nav>
 			<header>
@@ -49,14 +52,13 @@
 			<footer class="content">
 				<ul>
 					<li>
-						<a href="about.html"><p>Over Ons</p></a>
+						<a href="about.html">Over Ons</a>
 					</li>
 					<li>
-						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+						<a href="Film_adder.html">Film toevoegen</a>
 					</li>
 				</ul>
 			</footer>
 		</div>
-		<script src="get_date.js"></script>
 	</body>
 </html>

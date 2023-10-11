@@ -9,6 +9,11 @@
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+		<script>
 			$(document).ready(function () {
 				$("#slideshow > div:gt(0)").hide();
 
@@ -26,32 +31,30 @@
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
-				<div class="searchbox">
-					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+				<div>
+					<input type="text" id="searchbar" placeholder="Zoeken.." />
 					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
-				<div class="datumbar">
-					<label for="my-date-picker">
-						<input type="date" id="my-date-picker" name="my-date-picker" />
-					</label>
+				<div>
+					<button onclick="goBack()">Ga terug naar vorige pagina</button>
 				</div>
 			</nav>
 			<header class="content">
 				<div id="slideshow" class="slideshow">
 					<div class="picture">
-						<img src="/img/Cars.png" />
+						<img src="img/Cars.png" />
 						<p>Cars</p>
 					</div>
 					<div class="picture">
-						<img src="/img/Minions.png" />
+						<img src="img/Minions.png" />
 						<p>Minions</p>
 					</div>
 					<div class="picture">
-						<img src="/img/mario.jpg" />
+						<img src="img/mario.jpg" />
 						<p>Mario</p>
 					</div>
 					<div class="picture">
-						<img src="/img/Elemental.jpg" />
+						<img src="img/Elemental.jpg" />
 						<p>Elemental</p>
 					</div>
 				</div>
@@ -134,14 +137,13 @@
 			<footer class="content">
 				<ul>
 					<li>
-						<a href="about.html"><p>Over Ons</p></a>
+						<a href="about.html">Over Ons</a>
 					</li>
 					<li>
-						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+						<a href="Film_adder.html">Film toevoegen</a>
 					</li>
 				</ul>
 			</footer>
 		</div>
-		<script src="get_date.js"></script>
 	</body>
 </html>

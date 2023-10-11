@@ -2,10 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Aboutpage van Joep Snels" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<meta name="author" content="Joep Snels" />
 		<title>About</title>
 		<link rel="stylesheet" href="css/mystyle.css" />
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</head>
 	<body>
 		<div class="container aboutpage">
@@ -15,14 +22,12 @@
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
-				<div class="searchbox">
-					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+				<div>
+					<input type="text" id="searchbar" placeholder="Zoeken.." />
 					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
-				<div class="datumbar">
-					<label for="my-date-picker">
-						<input type="date" id="my-date-picker" name="my-date-picker" />
-					</label>
+				<div>
+					<button onclick="goBack()">Ga terug naar vorige pagina</button>
 				</div>
 			</nav>
 			<header>
@@ -34,11 +39,17 @@
 						Ik ben Joep Snels. Ik ben 17 jaar oud en woon in Roosendaal met mijn familie die bestaat uit:
 						mijn vader, mijn moeder en mijn zusje.
 					</p>
-					<br />
 					<p>
 						Ik heb natuurlijk ook nog hobby's zoals: gamen, voetballen en met mijn vriendin zijn. Ook heb ik
 						nog werk. Ik werk bij een Indonesisch restaurant Bali Baru in Roosendaal op de markt. Kom
 						gezellig een keer langs!
+					</p>
+					<p>
+						Ik ben de opleiding infomatica gaan doen vanwege dat ik het sinds dat ik 10 jaar ben al heel
+						intressant vond hoe een game en een programma op mijn computer werkte en wilde dit zelf later
+						ook gaan doen. Ik wist dus al vanaf mijn 10de dat ik later een infomatica studie wilde gaan doen
+						en dit is sinds dien nog steeds niet veranderd. Ik heb het heel erg naar mijn zin op Avans
+						Hogeschool in Breda en ben benieuwd wat de toekomst mij te brengen heeft.
 					</p>
 				</article>
 			</main>
@@ -56,6 +67,5 @@
 				</ul>
 			</footer>
 		</div>
-		<script src="get_date.js"></script>
 	</body>
 </html>

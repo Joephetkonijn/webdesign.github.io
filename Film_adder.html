@@ -6,6 +6,11 @@
 		<title>Film-adder</title>
 		<link rel="stylesheet" href="css/mystyle.css" />
 		<script src="https://kit.fontawesome.com/ef708f113d.js" crossorigin="anonymous"></script>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</head>
 	<body>
 		<div class="container Film_adder">
@@ -15,32 +20,44 @@
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
-				<div class="searchbox">
-					<input type="text" class="searchbar" id="searchbar" placeholder="Zoeken.." />
+				<div>
+					<input type="text" id="searchbar" placeholder="Zoeken.." />
 					<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
-				<div class="datumbar">
-					<label for="my-date-picker">
-						<input type="date" id="my-date-picker" name="my-date-picker" />
-					</label>
+				<div>
+					<button onclick="goBack()">Ga terug naar vorige pagina</button>
 				</div>
 			</nav>
 			<header>
-				<h1><p>Add a Film</p></h1>
+				<h1><p>Voeg een film toe</p></h1>
 			</header>
 			<main>
 				<form action="process-film.php" method="post">
+					<label for="Naam">Naam:</label>
+					<input type="text" id="Naam" name="Naam" required /><br /><br />
+
+					<label for="e-mail">E-mail:</label>
+					<input type="email" name="e-mail" id="e-mail" required /><br /><br />
+
+					<label for="time"> Hoeveel minuten:</label>
+					<input type="number" name="time" id="time" /><br /><br />
+
 					<label for="title">Titel:</label>
 					<input type="text" id="title" name="title" required /><br /><br />
 
 					<label for="director">Regisseur:</label>
 					<input type="text" id="director" name="director" required /><br /><br />
 
-					<label for="year">Jaartal:</label>
-					<input type="number" id="year" name="year" required /><br /><br />
+					<label for="year">Datum van creatie:</label>
+					<input type="date" id="year" name="year" required /><br /><br />
 
-					<label for="genre">Genre:</label>
-					<input type="text" id="genre" name="genre" required /><br /><br />
+					<label for="genre" required>Genre:</label>
+					<input type="radio" id="genre" name="Fantasy" />
+					<label for="Fantasy">Fantasy</label>
+					<input type="radio" id="genre" name="Action" required />
+					<label for="Action">Action</label>
+					<input type="radio" id="genre" name="Animation" required />
+					<label for="Animation">Animation</label><br /><br />
 
 					<input type="submit" value="Add Film" />
 				</form>
@@ -48,14 +65,13 @@
 			<footer class="content">
 				<ul>
 					<li>
-						<a href="about.html"><p>Over Ons</p></a>
+						<a href="about.html">Over Ons</a>
 					</li>
 					<li>
-						<a href="Film_adder.html"><p>Film toevoegen</p></a>
+						<a href="Film_adder.html">Film toevoegen</a>
 					</li>
 				</ul>
 			</footer>
 		</div>
-		<script src="get_date.js"></script>
 	</body>
 </html>
