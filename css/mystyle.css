@@ -102,6 +102,7 @@ footer {
 	text-align: center;
 	grid-area: footer;
 	padding: 10px;
+	border-radius: 28px;
 }
 .container {
 	display: grid;
@@ -286,5 +287,8 @@ footer {
 	.movie-images ul li img {
 		width: 125px;
 		height: 175px;
+	}
+	.Video {
+		width: 15rem;
 	}
 }
