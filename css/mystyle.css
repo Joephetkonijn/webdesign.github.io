@@ -34,9 +34,11 @@ ul li a:hover {
 	position: relative;
 	top: -4px;
 }
-video {
-	width: 320px;
-	height: 240px;
+.Video {
+	width: 20rem;
+}
+.Video video {
+	width: 100%;
 }
 
 .movie-images img {
@@ -207,6 +209,7 @@ footer {
 .Joep img {
 	width: 100%;
 }
+
 @media only screen and (max-width: 768px) {
 	.container {
 		font-size: 15px;
