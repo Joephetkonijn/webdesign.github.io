@@ -24,7 +24,7 @@ ul li {
 ul li a {
 	text-decoration: none;
 	font-weight: bolder;
-	color: lightgrey;
+	color: lightsalmon;
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -128,10 +128,11 @@ footer {
 }
 
 .slideshow {
-	padding: 0px;
+	padding: 5px;
+	margin: 5px;
 	position: relative;
-	width: 185px;
-	height: 275px;
+	width: 180px;
+	height: 260px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 	top: 50%;
 	left: 50%;
@@ -249,7 +250,7 @@ footer {
 		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav"
-			"header header "
+			"header header"
 			"main main"
 			"footer footer";
 	}
@@ -284,9 +285,11 @@ footer {
 		grid-gap: 10px;
 		text-align: center;
 	}
+	.movie-images ul li {
+		width: 10rem;
+	}
 	.movie-images ul li img {
-		width: 125px;
-		height: 175px;
+		width: 50%;
 	}
 	.Video {
 		width: 15rem;
