@@ -1,6 +1,8 @@
 h1 {
 	font-family: "Courier New", Courier, monospace;
 	color: white;
+	text-align: center;
+	transform: translate(0%, 50%);
 }
 
 p {
@@ -18,13 +20,12 @@ ul li {
 	margin: 20px;
 	color: #fff;
 	font-size: 15px;
-	border-radius: 28px;
 }
 
 ul li a {
 	text-decoration: none;
 	font-weight: bolder;
-	color: lightsalmon;
+	color: silver;
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -39,6 +40,9 @@ ul li a:hover {
 }
 .Video video {
 	width: 100%;
+}
+.vorming {
+	border-radius: 28px;
 }
 
 .movie-images img {
@@ -57,7 +61,6 @@ ul li a:hover {
 }
 .rating input {
 	display: none;
-	flex-direction: row-reverse;
 }
 .rating label {
 	font: 30px;
@@ -76,25 +79,44 @@ ul li a:hover {
 }
 nav {
 	grid-area: nav;
-	background-color: lightseagreen;
+	background-color: #00bfff;
 	padding: 10px;
-	border-radius: 28px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 main {
 	grid-area: main;
 	padding: 10px;
-	width: 100%;
+	margin-right: 5px;
+	margin-left: -5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 header {
 	grid-area: header;
 	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 aside {
 	grid-area: aside;
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 section {
 	grid-area: section;
 	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 footer {
@@ -102,7 +124,10 @@ footer {
 	text-align: center;
 	grid-area: footer;
 	padding: 10px;
-	border-radius: 28px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .container {
 	display: grid;
@@ -113,7 +138,6 @@ footer {
 	width: auto;
 	height: auto;
 	overflow: auto;
-	max-width: 100%;
 	font-size: 22px;
 	padding: 20px;
 }
@@ -124,7 +148,6 @@ footer {
 	grid-gap: 100px;
 	text-align: center;
 	background-color: #00bfff;
-	align-self: center;
 }
 
 .slideshow {
@@ -148,8 +171,6 @@ footer {
 	left: 70px;
 }
 .Homepage {
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 		"nav nav nav"
 		"header header header"
@@ -158,8 +179,6 @@ footer {
 	grid-gap: 5px;
 }
 .aboutpage {
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 		"nav nav nav"
 		"header header header"
@@ -167,8 +186,6 @@ footer {
 		"footer footer footer";
 }
 .infopage {
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto auto auto;
 	grid-template-areas:
 		"nav nav nav"
 		"header header header"
@@ -177,8 +194,6 @@ footer {
 		"footer footer footer";
 }
 .Actorpage {
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 		"nav nav nav"
 		"header header header"
@@ -186,59 +201,49 @@ footer {
 		"footer footer footer";
 }
 .Film_adder {
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto auto;
 	grid-template-areas:
-		"nav nav nav"
-		"header header header"
-		"main main main"
-		"main main main"
-		"footer footer footer";
+		"nav"
+		"header"
+		"main"
+		"footer";
 	color: white;
 }
 .navigatie {
 	display: inline;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto;
 	grid-template-areas: "div div div";
 	align-items: center;
 }
 
 .Joep {
 	width: 30rem;
+	padding: 5px;
+	margin: 10px;
 }
 .Joep img {
 	width: 100%;
+}
+.over {
+	padding: 5px;
+	margin: 10px;
+}
+.invoer {
+	text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
 	.container {
 		font-size: 15px;
-		max-width: 768px;
 	}
 
 	.aboutpage {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav"
 			"header header"
 			"main aside"
 			"footer footer";
 	}
-	.Film_adder {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
-		grid-template-areas:
-			"nav nav"
-			"header header"
-			"main main"
-			"footer footer";
-	}
 	.Actorpage {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav"
 			"header header"
@@ -246,8 +251,6 @@ footer {
 			"footer footer";
 	}
 	.Homepage {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav"
 			"header header"
@@ -255,8 +258,6 @@ footer {
 			"footer footer";
 	}
 	.infopage {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"nav nav "
 			"header header"
@@ -267,8 +268,7 @@ footer {
 	.navigatie {
 		display: inline;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
+
 		grid-template-areas:
 			"div div"
 			"div div";
@@ -293,5 +293,46 @@ footer {
 	}
 	.Video {
 		width: 15rem;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.Homepage {
+		grid-template-areas:
+			"nav"
+			"header"
+			"main"
+			"footer";
+	}
+	.Actorpage {
+		grid-template-areas:
+			"nav"
+			"header"
+			"aside"
+			"main"
+			"footer";
+	}
+	.infopage {
+		grid-template-areas:
+			"nav"
+			"header"
+			"aside"
+			"main"
+			"section"
+			"footer";
+	}
+	.aboutpage {
+		grid-template-areas:
+			"nav"
+			"header"
+			"aside"
+			"main"
+			"footer";
+	}
+	.movie-images ul {
+		display: grid;
+		grid-template-rows: repeat(12, 1);
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		text-align: center;
 	}
 }

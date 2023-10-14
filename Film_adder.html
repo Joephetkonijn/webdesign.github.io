@@ -17,24 +17,24 @@
 	</head>
 	<body>
 		<div class="container Film_adder">
-			<nav class="navigatie">
+			<nav class="navigatie vorming">
 				<div>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
 				<div>
-					<input type="text" id="searchbar" placeholder="Zoeken.." />
-					<button><i class="fa-solid fa-magnifying-glass"></i></button>
+					<input class="vorming" type="text" id="searchbar" placeholder="Zoeken.." />
+					<button class="vorming" aria-label="Zoeken"><i class="fa-solid fa-magnifying-glass"></i></button>
 				</div>
 				<div>
-					<button onclick="goBack()">Ga terug naar vorige pagina</button>
+					<button class="vorming" onclick="goBack()">Ga terug naar vorige pagina</button>
 				</div>
 			</nav>
 			<header>
 				<h1><p>Voeg een film toe</p></h1>
 			</header>
-			<main>
+			<main class="invoer">
 				<form action="process-film.php" method="post">
 					<label for="Naam">Naam:</label>
 					<input type="text" id="Naam" name="Naam" required /><br /><br />
@@ -42,7 +42,7 @@
 					<label for="e-mail">E-mail:</label>
 					<input type="email" name="e-mail" id="e-mail" required /><br /><br />
 
-					<label for="time"> Hoeveel minuten:</label>
+					<label for="time"> Aantal minuten:</label>
 					<input type="number" name="time" id="time" /><br /><br />
 
 					<label for="title">Titel:</label>
@@ -54,18 +54,21 @@
 					<label for="year">Datum van creatie:</label>
 					<input type="date" id="year" name="year" required /><br /><br />
 
-					<label for="genre" required>Genre:</label>
-					<input type="radio" id="genre" name="Fantasy" />
-					<label for="Fantasy">Fantasy</label>
-					<input type="radio" id="genre" name="Action" required />
-					<label for="Action">Action</label>
-					<input type="radio" id="genre" name="Animation" required />
-					<label for="Animation">Animation</label><br /><br />
+					<p>Genre</p>
+					<input type="radio" id="Fantasy" name="genre" value="Fantasy" />
+					<label for="Fantasy">Fantasy</label><br /><br />
+					<input type="radio" id="Action genre " name="genre" value="Action" />
+					<label for="Action">Action</label><br /><br />
+					<input type="radio" id="Animation genre" name="genre" value="Animation" />
+					<label for="Animation">Animation</label>
+
+					<p>Descriptie</p>
+					<textarea name="Filmdiscriptie" id="Discriptie" cols="30" rows="15"></textarea>
 
 					<input type="submit" value="Add Film" />
 				</form>
 			</main>
-			<footer>
+			<footer class="vorming">
 				<ul>
 					<li>© 2023 Joep Snels</li>
 					<li>
